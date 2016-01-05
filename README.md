@@ -1,4 +1,6 @@
-# Internet Speed Test - NewsNow.io chrome extension
+# Internet Speed Test
+
+## NewsNow.io chrome extension
 
 NewsNow.io plugin is a Google Chrome extension that allows you to instantly Internet Speed with a single click.
 
