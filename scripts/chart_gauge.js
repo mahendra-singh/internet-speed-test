@@ -97,9 +97,9 @@ function onTestCompleted(testResult) {
   $("#latency").text(testResult.latency+" ms");
   $("#testServer").text(testResult.testServer);
 
-  var copyDataResult = "Download: "   +testResult.download +"Mbps; "+"Upload: "     +testResult.upload   +"Mbps; "+"Latency: "    +testResult.latency  +"ms; "+"Jitter: "     +testResult.jitter   +"ms; "+"Test Server: "+testResult.testServer +"; "+"IP: "         +testResult.ip_address +"; "+"Hostname: "   +testResult.hostname +";");
+  var copyDataResult = "Download: "   +testResult.download +"Mbps; "+"Upload: "     +testResult.upload   +"Mbps; "+"Latency: "    +testResult.latency  +"ms; "+"Jitter: "     +testResult.jitter   +"ms; "+"Test Server: "+testResult.testServer +"; "+"IP: "         +testResult.ip_address +"; "+"Hostname: "   +testResult.hostname +";";
 
-  // copy clipboard
+  // copy clipboard HTML5 API
 
   $('#copy').on( 'click', function( event ) {
     copytext(copyDataResult);
@@ -158,8 +158,4 @@ function onTestCompleted(testResult) {
 function onError(error) {
     $('.checkInternetConnection').text("Error "+ error.code + ": "+error.message).show();
 }
-
-
-
-
 
