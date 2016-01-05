@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>NewsNow Plugin</title>
+    <link rel="stylesheet" type="text/css" href="styles/newsnow.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="container_innerwrap">
+        <h4>NewsNow.io Plugin</h4>
+
+        <div class="wrapper noborder">
+          <h3 class="checkPageSpeed" style="display: none;">checking your page speed ... </h3>
+          <h3 class="checkInternetConnection" style="display: none;">checking your Internet connection ... </h3>
+          <p>Website features</p>
+          <div class="wrapper">
+            <label class="label">Advertisments</label>
+            <div class="switch">
+              <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+              <label for="cmn-toggle-1"></label>
+            </div>
+          </div>
+          <div class="wrapper">
+            <label class="label">Analytics</label>
+            <div class="switch">
+              <input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round" type="checkbox">
+              <label for="cmn-toggle-2"></label>
+            </div>
+          </div>
+          <div class="wrapper">
+            <label class="label">3rd Party services</label>
+            <div class="switch">
+              <input id="cmn-toggle-3" class="cmn-toggle cmn-toggle-round" type="checkbox">
+              <label for="cmn-toggle-3"></label>
+            </div>
+          </div>
+          <p><a href="#" class="white" id="checkPage">Check Page Speed ?</a></p>
+          <p><a href="#" class="white" id="checkInternet">Is your internet slow ?</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scripts/newsnow.js"></script>
+    <script src="//speedof.me/api/api.js" type="text/javascript"></script>
+  </body>
+</html>
+
+
+

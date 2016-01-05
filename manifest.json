@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "NewsNow.io Plugin",
+  "description": "This extension will help the NewsNow regional users (Fairfax) to test their Internet Speed.",
+  "version": "1.13",
+  "browser_action": {
+   "default_title": "NewsNow Plugin",
+   "default_icon": "images/newsnow.png",
+   "default_popup": "newsnow.html"
+  },
+  "icons": { "16" : "images/newsnow.png",
+      "48" : "images/newsnow48.png",
+      "128" : "images/newsnow128.png"},
+  "background": {
+    "scripts": ["scripts/background.js"]
+  },
+  "permissions": [
+    "activeTab",
+    "cookies",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}

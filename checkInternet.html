@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <title>NewsNow Plugin</title>
+    <!-- Load c3.css -->
+    <link rel="stylesheet" type="text/css" href="styles/c3.css" >
+    <!-- Load default styles -->
+    <link rel="stylesheet" type="text/css" href="styles/newsnow.css">
+    <!-- Load speed api -->
+    <script type="text/javascript" src="//speedof.me/api/api.js" ></script>
+  </head>
+  <body>
+    <div class="container tall">
+      <div class="container_innerwrap">
+        <h4>NewsNow.io Plugin</h4>
+
+        <div class="wrapper noborder">
+          <div class="progressing">
+            <img class="loading" src="images/loader.gif">
+            <p>checking your Internet connection (takes 1-2 mins)... </p>
+            <div class="wrapper overflow-hidden">
+              <label class="label">Progress type</label>
+              <div id="progress" class="switch">...</div>
+            </div>
+            <div class="wrapper overflow-hidden">
+              <label class="label">Pass</label>
+              <div id="pass" class="switch">...</div>
+            </div>
+            <div class="wrapper overflow-hidden">
+              <label class="label">Percentage done</label>
+              <div id="percentage" class="switch">...</div>
+            </div>
+            <div class="wrapper overflow-hidden noborder">
+              <label class="label">Current Speed</label>
+              <div id="current" class="switch bold">0 Mbps</div>
+            </div>
+          </div>
+          <div class="complete" style="display:none;">
+            <div class="wrapper overflow-hidden">
+              <label class="label tall">Download</label>
+              <div id="download" class="graph"></div>
+            </div>
+            <div class="wrapper overflow-hidden">
+              <label class="label tall">Upload</label>
+              <div id="upload" class="graph"></div>
+            </div>
+            <div class="wrapper">
+              <label class="label">Latency</label>
+              <div id="latency" class="switch">15 ms</div>
+            </div>
+            <div class="wrapper noborder">
+              <label class="label">Test Server</label>
+              <div id="testServer" class="switch">Sydney</div>
+            </div>
+            <textarea class="copyDataResult" style="display: none;">
+              data
+            </textarea>
+
+            <button class="copyData">Copy to Clipboard</button>
+
+          </div>
+<!--           <p><a href="#" class="white" id="checkPage">Check Page Speed ?</a></p>
+          <p><a href="#" class="white" id="checkInternet">Is your internet slow ?</a></p> -->
+        </div>
+      </div>
+    </div>
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <!-- Load d3.js and c3.js -->
+    <script src="scripts/d3.v3.min.js" charset="utf-8"></script>
+    <script src="scripts/c3.js"></script>
+    <!-- Load default js -->
+    <script src="scripts/newsnow.js"></script>
+    <script src="scripts/chart_gauge.js"></script>
+
+    <!-- SpeedOf.Me API
+
+SpeedOf.Me API, the first and only speed test API, allows you to measure your users' connection speed.
+
+Without having to host a SpeedOfMe software on your server, you are now able to run a SpeedOf.Me speed test right from your website or app. It is a JavaScript speed test API which allows you to measure download speed, upload speed, latency and jitter of the client. This means you can:
+
+Create your own speed test service!
+Collect statistical information and benchmark the bandwidth of your users
+Decide what audio/video streaming quality is suitable for the client
+Tell the user how long it exactly takes to download/upload a specific file
+Integrate it in your Internet connected hardware/equipment
+And more...
+SpeedOf.Me API is FREE of charge during the beta period.
+
+Thousands of developers have already integrated the SpeedOf.Me API into their systems.
+Please see the sample page and claim your API key here.
+
+Want to host SpeedOfMe on your own server? Contact us for more details.
+
+-->
+  </body>
+</html>
+
+
+
